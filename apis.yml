@@ -26,15 +26,70 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hertz.png
 url: 
   https://raw.githubusercontent.com/api-evangelist/hertz/refs/heads/main/apis.yml
-modified: '2026-04-28'
+type: Index
+created: '2026-03-21'
+modified: '2026-09-13'
 apis: []
 common:
   - type: DomainSecurity
     url: security/hertz-domain-security.yml
+  - type: LLMsTxt
+    url: llms/hertz-llms.txt
   - type: LinkedIn
     url: https://www.linkedin.com/company/hertz
   - type: Website
     url: https://www.hertz.com
+  - type: Support
+    url: https://www.hertz.com/supporthub/
+  - type: Blog
+    url: https://www.hertz.com/us/en/blog
+  - type: TermsOfService
+    url: https://www.hertz.com/rentacar/navigation/templates/legalView.jsp
+  - type: PrivacyPolicy
+    url: https://www.hertz.com/rentacar/privacypolicy/index.jsp?targetPage=privacyPolicyView.jsp
 description: >-
-  In airports around the world and rental car locations near you, get a great selection
-  and price on rental cars, vans and trucks. Reserve your vehicle today.
+  The Hertz Corporation is a global vehicle rental company operating the Hertz, Dollar and Thrifty
+  brands from airport and neighbourhood locations in roughly 160 countries, renting cars, vans and
+  trucks to leisure, corporate, government and rideshare customers and running the Hertz Gold Plus
+  Rewards loyalty programme. Hertz publishes no public developer programme: probing on 2026-09-13
+  found no developer portal, no OpenAPI or other machine-readable contract, no SDKs, no first-party
+  MCP server and no /.well-known/ discovery documents on any Hertz host. Third-party integrators
+  reach Hertz rates and availability through the global distribution systems — Amadeus, Sabre and
+  Travelport — which Hertz's own Travel Agent GDS Tools page directs them to, rather than through a
+  first-party API.
+tags:
+  - Fortune 500
+  - Car Rental
+  - Vehicle Rental
+  - Travel
+  - Mobility
+  - Transportation
+  - Fleet Management
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: marketplace-only
+  detail: >-
+    Hertz's own Travel Agent "GDS Tools" page hands integrators quick-reference guides for Amadeus,
+    Galileo by Travelport, SABRE Travel Network and Worldspan instead of publishing an API
+    reference, and the only developer-shaped hostname, developers.hertz.com, is a dangling Akamai
+    CNAME whose certificate does not match the name.
+  evidence:
+    - url: https://www.hertz.com/rentacar/misc/index.jsp?targetPage=GDSindex_TA.jsp
+      status: 200
+    - url: https://developers.hertz.com/
+      status: 0
+    - url: https://api.hertz.com/openapi.json
+      status: 404
+    - url: https://api.hertz.io/openapi.json
+      status: 403
+    - url: https://www.hertz.com/.well-known/api-catalog
+      status: 404
+  checked: '2026-09-13'

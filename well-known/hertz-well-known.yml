@@ -1,0 +1,413 @@
+generated: '2026-09-13'
+method: probed
+source: live HTTP probes of the named /.well-known/ path list on every host this record knows
+note: >-
+  Closed-list probe of the /.well-known/ discovery surface plus the APIs.json root paths.
+  Every path was requested on every host; NOTHING was served. hit_count is 0, so this file
+  records an absence and NO WellKnown or SecurityTxt pointer is wired into apis.yml — the
+  pointer would assert that Hertz serves a discovery surface, and Hertz does not.
+hit_count: 0
+path_echo_control: passed   # /.well-known/hertz-negative-control-7f3ab91c.json returned a non-2xx on every host
+hosts:
+- host: https://www.hertz.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: html shell
+  - path: /llms.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    note: html shell
+- host: https://hertz.com
+  note: >-
+    apex redirects (301) to https://www.hertz.com for every path; probed there.
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/ucp.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/acp.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/aauth-resource.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/apis.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /apis.json
+    status: 301
+    file: null
+    note: non-document response
+  - path: /apis.yml
+    status: 301
+    file: null
+    note: non-document response
+  - path: /llms.txt
+    status: 301
+    file: null
+    note: non-document response
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 301
+    file: null
+    note: non-document response
+- host: https://api.hertz.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.yml
+    status: 404
+    file: null
+    note: html shell
+  - path: /llms.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    note: html shell
+- host: https://api.hertz.io
+  note: >-
+    Imperva WAF answers 403 to every anonymous request, including the negative control — no document is reachable and none is asserted.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/ucp.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/acp.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/apis.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /apis.json
+    status: 403
+    file: null
+    note: html shell
+  - path: /apis.yml
+    status: 403
+    file: null
+    note: html shell
+  - path: /llms.txt
+    status: 403
+    file: null
+    note: html shell
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 403
+    file: null
+    note: html shell
+- host: https://ecom.mss.hertz.io
+  note: >-
+    connection refused/reset from the probe host (curl exit 000) on every path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-protected-resource
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/ai-plugin.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/ucp.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/acp.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/aauth-resource.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/apis.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/agent.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /apis.json
+    status: 0
+    file: null
+    note: html shell
+  - path: /apis.yml
+    status: 0
+    file: null
+    note: html shell
+  - path: /llms.txt
+    status: 0
+    file: null
+    note: html shell
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 0
+    file: null
+    note: html shell
+- host: https://newsroom.hertz.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.json
+    status: 404
+    file: null
+    note: html shell
+  - path: /apis.yml
+    status: 403
+    file: null
+    note: html shell
+  - path: /llms.txt
+    status: 404
+    file: null
+    note: html shell
+  - path: /.well-known/hertz-negative-control-7f3ab91c.json
+    status: 404
+    file: null
+    note: html shell
