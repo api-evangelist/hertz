@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "hertz",
+    "captured_at": "2026-10-11T190527",
+    "source_url": "https://www.hertz.com",
+    "source_type": "Website",
+    "file": "hertz-2026-10-11T190527.png",
+    "bytes": 437981,
+    "capture": "playwright-local"
+  }
+]
